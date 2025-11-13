@@ -17,3 +17,6 @@ specified parameters.
 
 ### Title
 Simply outputs text as print.
+
+### Login 
+This feature enables account login using IDLogin technology. All data is stored and processed on your server.
