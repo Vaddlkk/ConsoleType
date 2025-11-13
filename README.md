@@ -4,6 +4,7 @@
 <hr>
 
 [![Python](https://img.shields.io/badge/Python-3.8%20%E2%80%93%203.14-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
+[![Python](https://img.shields.io/badge/PyPI-blue?style=flat&logo=pypi&logoColor=white)](https://pypi.org/user/Vadim_200129/)
 
 <hr>
 </div>
