@@ -36,3 +36,8 @@ def login(homeurl, error, name):
         return IDLogin
     else:
         print(error)
+
+def cval(one, two, onez, twoz):
+    one = eval(f"{one}{onez}{two}")
+    one = eval(f"{one}{twoz}{two}")
+    return one
