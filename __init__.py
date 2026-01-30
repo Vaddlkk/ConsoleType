@@ -1,7 +1,9 @@
 import os
 import time
 import requests
+from warnings import *
 
+@deprecated("Функция Login ольше не работает перепешите части с ней на idlogin")
 def prints(text, times, size, title):
     sizes = 0
     ot = "-"
@@ -23,6 +25,21 @@ def outputs(text, times):
 def title(title):
     print(title)
 
+def idlogin(homeurl, error, name):
+    print(f"IDLogin {name}")
+    data = {"username": "example", "password": "example"}
+    data["username"] = input("Имя Пользователя: ")
+    data["password"] = input("Пароль: ")
+    session = requests.Session()
+    resp = session.post(homeurl, data=data)
+    if "dp" in resp.text:
+        print("Вход выполнен IDLogin")
+        IDLogin = resp.text[4:]
+        return IDLogin
+    else:
+        print(error)
+        
+@deprecated("Функция Login ольше не работает перепешите части с ней на idlogin")
 def login(homeurl, error, name):
     print(f"IDLogin {name}")
     data = {"username": "example", "password": "example"}
